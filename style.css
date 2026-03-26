@@ -300,3 +300,26 @@ body {
         width: 90%;
     }
 }
+
+/* PERFECT CENTER FIX */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* LIGHTER BACKGROUND */
+body::before {
+    background: rgba(0, 51, 102, 0.4);
+}
+
+/* MOBILE CENTER FIX */
+@media (max-width: 768px) {
+    .container {
+        min-height: 100vh;
+        justify-content: center;
+    }
+}
